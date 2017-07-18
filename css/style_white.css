@@ -1,0 +1,88 @@
+html,
+body {
+    background-color: #DCDCDC;  /*DONE*/
+}
+
+.info-bar {
+  background-color: transparent;
+  color: grey; 
+}
+
+div.tab {
+  border: 1px solid #ccc;
+  background: #197f99; 
+}
+
+.tablinks{
+	color:white; /*DONE OBJECT ITEMS EXTRA*/
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: transparent;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd; /*done*/
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc; /*done*/
+}
+
+/* Style the tab content */
+.tabcontent {
+    background-color: white; 
+    background-image: -webkit-linear-gradient(top, #cad1eb, #dedede);
+    background-image: -moz-linear-gradient(top, #cad1eb, #dedede);
+    background-image: -ms-linear-gradient(top, #cad1eb, #dedede);
+    background-image: -o-linear-gradient(top, #cad1eb, #dedede);
+    background-image: linear-gradient(to bottom, #cad1eb, #dedede);
+}
+
+
+.button {
+  /*MUDAR AQUI*/
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #d1d1d1);
+  background-image: -moz-linear-gradient(top, #ffffff, #d1d1d1);
+  background-image: -ms-linear-gradient(top, #ffffff, #d1d1d1);
+  background-image: -o-linear-gradient(top, #ffffff, #d1d1d1);
+  background-image: linear-gradient(to bottom, #ffffff, #d1d1d1);
+  color: #6d6d6d;
+}
+
+.button:hover {
+  background: #197f99;
+  text-decoration: none;
+  color: white;
+}
+
+.button:active {
+  background-color: #2F4F4F;  
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+.headtext{
+  text-align: center;
+  color: black;
+}
+
+.tableStyle th{
+  background-color: white;
+}
+
+.tableStyle tr:hover {
+  background-color: grey;
+}
+
+#sql_table tr:hover {
+  background-color: lightgrey;
+}
+
+#sql_table th{
+  background-color: grey;
+}

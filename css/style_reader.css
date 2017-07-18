@@ -1,0 +1,154 @@
+html,
+body {
+   	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 41%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(41%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 41%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 41%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 41%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 41%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
+#output_file{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	background-color: white;
+	margin: auto;
+    width: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    top: 15%;
+    min-height: 70%;
+    overflow: scroll;
+    bottom: 10%;
+}
+
+#footer{
+	position:fixed;
+   	left:0px;
+   	bottom:0px;
+   	height:65px;
+   	width:100%;
+   	background:#999;
+   	border-top: 1px solid grey;
+}
+
+#footertext{
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+}
+
+#url_link{
+	text-shadow: 0px 0px 0px
+}
+
+#fileid{
+	display: block;
+    margin : 0 auto;
+}
+
+#side_div{
+	position: absolute;
+	width: 20%;
+	border: 1px solid grey;
+
+
+	position: absolute;
+	left: 3%;
+    top: 15%;
+}
+
+#inner_side_div{
+	border-top: 1px solid grey;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+#inner_side_text{
+	text-align: center;
+	color: black;
+
+}
+
+#input_file{
+	position: absolute;
+	background: white;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 10%;
+	width: 100%;
+
+	border-bottom: 1px solid lightgrey;
+}
+
+#tab_div{
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	position: absolute;
+	border: 1px solid red;
+	height: 100%;
+	width: 20%;
+	left: 0px;
+	top: 0px;
+	background-color: white;
+	display: inline;
+    float: none;
+}
+
+.btn_img{
+    margin-left: 10px;
+    left: 10%;
+	position: relative;
+	bottom: 0px;
+	width: 20px;
+	height: 20px;
+	top: 20%;
+}
+
+.button_div{
+	position: relative;
+	background: white;
+	top: 9%;
+	left: 0%;
+	height: 7%;
+	margin-top: 5px;
+ 	width: 100%;
+}
+
+.button_div:hover{
+	background: darkgrey;
+}
+
+.btn_side{
+	position: absolute;
+	background: white;
+	right: 0%;
+	height: 100%;
+ 	width: 80%;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	margin: 0px auto;
+}
+
+#toggle_div{
+	z-index: 10;
+	position: absolute;
+	top:5px;
+	left:5px;
+	height: 30px;
+	width: 30px;
+}
+
+#menu_img{
+	width: 100%;
+	height: 100%;
+}
+
+.btn_label{
+	position: absolute;
+	left: 26%;
+	top: 25%;
+}

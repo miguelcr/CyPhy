@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CyphyReader v0.1</title>
+    <link rel="stylesheet" href="css/style_reader.css?version=0.2.9">
+    <script src="assets/js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="dist/paper-full.min.js"></script>
+    <script type="text/javascript" src="readerjs.js?version=0.1.13"></script>
+    <script>
+      function uploadtodiv(){
+        var fileInput = $("#fileid");
+        var input = fileInput.get(0);
+        var reader = new FileReader();
+        if (input.files.length){
+            var textFile = input.files[0];
+            reader.readAsText(textFile);
+            $(reader).on('load', processFile);
+        }else{
+            alert('Try again please.');
+        }
+      }
+      window.onload = function(){
+        console.log("Adding Triggers");
+        $("#tab_div").toggle();//start hidden
+
+        $(".btn_download").click(function(){
+           console.log("download");
+        });
+    
+        $("#menu_img").click(function(){
+            console.log("toggle");
+            $("#tab_div").toggle();
+        });
+
+        $(".btn_upload").click(function(){
+            console.log("upload");
+        });
+        console.log("...done adding triggers");
+      }   
+    </script>
+</head>
+<body>
+  <div id="input_file">
+  	<br>
+    <input id='fileid' type='file' value="Upload" onchange="uploadtodiv();"/>
+  </div>
+
+  <div id="toggle_div">
+    <img id="menu_img" src="assets/menu.png" value="DOWNLOAD"></img>
+  </div>
+
+  <div id="tab_div">
+    <div class="button_div btn_download">
+      <img class="btn_img" src="assets/download.png" value="DOWNLOAD"></img>
+      <label id="btn_download" class="btn_label">Download</label>
+    </div>
+    <div class="button_div btn_upload">
+      <img class="btn_img" src="assets/download.png" value="UPLOAD"></img>
+      <label id="btn_upload" class="btn_label">Upload</label>
+    </div>
+  </div>
+
+  <div id="output_file">
+    <div id="comments">
+    </div>
+    <br>
+  	<div id="before"></div>
+  	<br>
+  	void setup(){ <br>
+  		<div id="setup"></div>
+  	}
+  	<br>
+  	<br>
+  	void loop(){ <br>
+  		<div id="loop"></div>
+  	}
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div id="footer">
+  	<br>
+  	<div id="footertext">
+  		Direct link to main project: <a id="url_link" href="http://localhost:8090/pro4/maintest.html">http://localhost:8090/pro4/maintest.html</a>
+  	</div>
+  </div>
+
+</body>
+</html>

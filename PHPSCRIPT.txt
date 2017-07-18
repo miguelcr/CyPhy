@@ -1,0 +1,82 @@
+Create database cyphy;
+
+Drop table cyphy.files;
+
+CREATE TABLE IF NOT EXISTS cyphy.files(
+	id_file INT NOT NULL AUTO_INCREMENT, /* PK */
+    word_file Varchar(250) NOT NULL,
+    password_file Varchar(250) NOT NULL,
+    directory_file Varchar(50) NOT NULL,
+    PRIMARY KEY (id_file)
+);
+
+Select * from cyphy.files;
+
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");
+INSERT INTO cyphy.files(word_file,password_file,directory_file) VALUES ("teste","teste","teste");

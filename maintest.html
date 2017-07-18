@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cyphy v0.1.1</title>
+    <link rel="stylesheet" href="css/style_main.css?version=0.2.16"> <!-- main é branco-->
+    <link rel="stylesheet" href="css/style_black.css?version=0.1.12"> <!-- default preto -->
+    <script src="assets/js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="dist/paper-full.min.js"></script>
+    <script type="text/javascript" src="readerjs.js?version=0.1.16"></script>
+    <script type="text/javascript" src="mainjs.js?version=0.1.53" canvas="canvas"></script>
+    <script>
+    	function openTabs(tabname) {
+    		// Declare all variables
+    		var i, tabcontent, tablinks;
+
+    		// Get all elements with class="tabcontent" and hide them
+    		tabcontent = document.getElementsByClassName("tabcontent");
+    		for (i = 0; i < tabcontent.length; i++) {
+        		tabcontent[i].style.display = "none";
+    		}
+
+    		// Get all elements with class="tablinks" and remove the class "active"
+    		tablinks = document.getElementsByClassName("tablinks");
+    		for (i = 0; i < tablinks.length; i++) {
+        		tablinks[i].className = tablinks[i].className.replace(" active", "");
+    		}
+
+    		document.getElementById(tabname).style.display = "block";
+		  }
+
+      //remove later
+      function popupFunc() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      } 
+    </script>
+</head>
+<body>
+	  <div id="details">
+      <div class="tab">
+  		  <button id="tab1" class="tablinks" onclick="openTabs('content_tab1')">Object</button>
+  		  <button id="tab2" class="tablinks" onclick="openTabs('content_tab2')">Items</button>
+  		  <button id="tab3" class="tablinks" onclick="openTabs('content_tab3')">Extra</button>
+		  </div>
+
+		  <div id="content_tab1" class="tabcontent">
+			  <h3 class="headtext">Object Properties</h3>
+			  <br>
+    		Name: <label id="obj_name">-</label>
+    		<br>
+    		Type: <label id="obj_type">-</label>
+    		<br>
+        	<br>
+        	<div id="sensor_div">
+        	</div>
+        	<br>
+        	<div id="connections_div">
+        		<div id="connections_inner_div">
+        			<table id="connections_table" class="tableStyle">
+        			</table>
+        		</div>
+        	</div>
+    		<br>
+		  </div>
+
+		  <div id="content_tab2" class="tabcontent">
+  			<h3 class="headtext">Items</h3>
+  			<div id="Sensor_div" class="type_div">
+  				<img id="Sensor_img" src="assets/Sensor.png" class="itemimg left" value="SENSOR">
+  				<label class="type_label">Sensor</label>
+  			</div>
+  			<div id="Atuador_div" class="type_div">
+  				<img id="Atuador_img" src="assets/Atuador.png" class="itemimg left" value="ATUADOR">
+  				<label class="type_label">Actuator</label>
+  			</div>
+  			<div id="Api_div" class="type_div">
+  				<img id="Api_img" src="assets/API.png" class="itemimg right" value="API">
+  				<label class="type_label">API</label>
+  			</div>
+  			<div id="Statement_div" class="type_div">
+  				<img id="Statement_img" src="assets/Statement.png" class="itemimg right" value="STATEMENT">
+  				<label class="type_label">Statement</label>
+	 	    </div>
+	    </div>
+
+		<div id="content_tab3" class="tabcontent">
+        <h3 class="headtext">Objects</h3>
+        	<div id="objects_inner_div">
+        		<table id="objects_table" class="tableStyle">
+          			<tr>
+            			<th>
+              			<label>No Objects at the moment.<br></label>
+            			</th>
+          			</tr>
+        		</table>
+        	</div>
+		 </div>
+      <br>
+      <label id="myLabel">Loading...</label>
+
+		  <br>
+		  <br>
+		  <br>
+      <input type="button" id="conc_button" class="button" value="Add Connection"></input>
+    </div>
+
+    <canvas id="canvas" resize></canvas>
+  
+    <div id="info">
+    	<div class="button-bar">
+    		<input type="button" class="button prev" id="before_button" value="Before"></input>
+    		<input type="button" class="button center" id="center_button" value="Center"></input>
+    		<input type="button" class="button next" id="after_button" value="After"></input>
+    	</div>
+      <div class="json-bar button-bar">
+        <input type="button" class="button" id="json_download" value="Download"></input>
+        <input type="button" class="button" id="json_upload" value="Upload"></input>
+        <input id='fileid' type='file' hidden/>
+        <input type="button" class="button" id="json_save" value="Save DB"></input>
+        <input type="button" class="button" id="json_load" value="Load DB"></input>
+        <input type="button" id="code_button" class="button" value="Download To Code"></input>
+      </div>
+      <div id="color_picker_div" class="button-bar">
+        <input type="button" id="black_color" class="colorbutton black" value=" "></input>
+        <input type="button" id="white_color" class="colorbutton white" value=" "></input>
+        <input type="button" id="green_color" class="colorbutton green" value=" "></input>
+      </div>
+      <div class="popup" onclick="popupFunc()">
+        <span class="popuptext" id="myPopup">A Simple Popup!</span>
+      </div>
+    	<div class="info-bar">
+    		<label id="coords">%undefined%</label>
+    		<br>
+    		<label id="zoom">%undefined%</label>
+        <br>
+    	</div>
+    </div>
+
+    <div id="statment_div" resize>
+      <textarea id="statment_textarea"></textarea>
+      <input id="statment_button" class="button" type="button" value="Ok"></input>
+    </div>
+
+    <div id="api_div" resize>
+      <div id="api_inner_div">
+        <input id="api_text" type="text" placeholder="API URL"></input>
+        <span id="api_results"></span>
+      </div>
+      <input id="api_teste_button" class="button" type="button" value="Test"></input>
+      <span id="api_tested" class="red">Status</span>
+      <input id="api_button" class="button" type="button" value="Ok"></input>
+      <input id="api_button_cancel" class="button" type="button" value="Cancel"></input>
+    </div>
+
+    <div id="sql_div" resize>
+    	<div id="sql_inner_div">
+    		<div id="sql_table_div">
+    			<!-- onkeyup="showAllSavedInBD(this.value);" -->
+      			<input type="search" id="procura" placeholder="Reference word" onkeyup="showAllSavedInBD(this.value);">
+      			<br>
+    			<table id="sql_table">
+
+    			</table>
+    		</div>
+      	</div>
+    	<input id="sql_button" class="button" type="button" value="Cancel"></input>
+    </div>
+
+    <div id="output_file" hidden>
+      <div id="comments">
+      </div>
+      <br>
+      <div id="before"></div>
+      <br>
+      void setup(){ <br>
+        <div id="setup"></div>
+      }
+      <br>
+      <br>
+      void loop(){ <br>
+      <div id="loop"></div>
+      }
+    </div>
+        
+</body>
+</html>
